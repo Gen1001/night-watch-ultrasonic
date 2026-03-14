@@ -32,9 +32,6 @@ This project demonstrates:
 
 5. Threshold detection determines bed-exit events.
 
-## Test Results
-
-
 ## Future Improvements
 
 - Designing RESTful communication between embedded device and server

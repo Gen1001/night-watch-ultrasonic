@@ -1,39 +1,40 @@
-# IoT Bed-Exit Monitoring System
+# 離床検知センサー
 
-## Overview
+## 概要
 
-This project is an IoT-based bed-exit monitoring system built with ESP32 and an ultrasonic sensor (HC-SR04).
+このプロジェクトはESP32とセンサー（HC-SR04）を使用した離床を検知するセンサーです。
 
-The system measures distance in real time and sends data to a Python HTTP server. 
-Measurement logs are stored in a SQLite database and can be monitored for anomaly detection.
+システムが距離を正確に計測し、そのデータをPythonで作成したHTTPサーバに送信する仕組みになっています。
+計測したログはSQLiteデータベースに保存され、異常な動作を検知するために監視できるようにしました。
 
-This project demonstrates:
-- Embedded development with ESP32 (PlatformIO)
-- Sensor integration (HC-SR04)
-- HTTP communication
-- Python backend implementation
-- SQLite database handling
+以下の機能を実現しました：
+ESP32（PlatformIO）を用いた組み込み開発
+-FreeRTOSを使用したリアルタイムなタスクの管理
+-キューの制御
+-割り込み処理（ISR）
+-状態遷移
+-ポインタ管理
+センサー（HC-SR04）の統合
+WiFi接続、HTTP通信
+Pythonによるバックエンド実装
+SQLiteデータベースの取り扱い
 
-## System Architecture
-![alt text](image.png)
+## 状態遷移図
 <img width="613" height="232" alt="スクリーンショット 2026-02-26 123408" src="https://github.com/user-attachments/assets/c81c49ab-bf55-4fc4-8d19-601fa1f3f97f" />
 
-## Hardware
+## ハードウェア
+・ESP32  
+https://www.amazon.co.jp/dp/B0C9TGJRPH?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1  
+・HC-SR04  
+https://www.amazon.co.jp/dp/B0CPVDX544?ref=ppx_yo2ov_dt_b_fed_asin_title
 
-- Voltage Divider (10kΩ / 20kΩ)
-
-### Wiring Diagram
-![alt text](IMG_4079.jpeg) ![alt text](IMG_4081.jpeg) ![alt text](IMG_4080.jpeg)
-![IMG_4079](https://github.com/user-attachments/assets/2f9b85f3-77cd-4497-8f7c-3e7e8031a01a)
-![IMG_4080](https://github.com/user-attachments/assets/f4d19014-3c04-4950-9822-267a42f89488)
-![IMG_4081](https://github.com/user-attachments/assets/54088e12-d868-4011-b823-e21e01003e07)
+### 回路図
+<img width="1720" height="797" alt="image" src="https://github.com/user-attachments/assets/aadeda0a-8be3-4f16-aeac-d8a8db5a28c1" />
 
 ## Software Stack
+1. VS
 
-5. Threshold detection determines bed-exit events.
+## 今後の展望
 
-## Future Improvements
+・省電力モードの実装を行い、よりメモリを意識した設計を行う
 
-- Designing RESTful communication between embedded device and server
-- Database schema design for time-series sensor data
-- Basic IoT system architecture

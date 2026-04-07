@@ -22,7 +22,6 @@ def init_db():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             timestamp TEXT,
             distance REAL,
-            alert INTEGER,
             state INTEGER
         )
     """)
@@ -38,20 +37,19 @@ init_db()
 def receive_sensor():
     data = request.get_json()
     distance = data.get("distance")
-    alert = 1 if data.get("alert") else 0
     state = data.get("state")
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # DB保存
     conn = sqlite3.connect("sensor.db")
     c = conn.cursor()
-    c.execute("INSERT INTO sensor_data (timestamp, distance, alert, state) VALUES (?, ?, ?, ?)",
-                (timestamp, distance, alert, state))
+    c.execute("INSERT INTO sensor_data (timestamp, distance, state) VALUES (?, ?, ?)",
+                (timestamp, distance, state))
     conn.commit()
     conn.close()
 
     # ログ書き込み
-    logging.info(f"Distance={distance} Alert={alert} State={state}")
+    logging.info(f"Distance={distance} State={state}")
 
     # レスポンス返却
     return jsonify({"status": "ok"})

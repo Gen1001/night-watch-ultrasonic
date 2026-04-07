@@ -8,9 +8,11 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/include",
-                "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/src",
-                "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/lib/ultrasonic",
+                "C:/Users/PC_User/Desktop/practice_code/night-watch-ultrasonic/esp32/include",
+                "C:/Users/PC_User/Desktop/practice_code/night-watch-ultrasonic/esp32/src",
+                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
+                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
+                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -218,7 +220,6 @@
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
-                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
@@ -236,8 +237,6 @@
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
-                "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 ""
@@ -245,9 +244,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/include",
-                    "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/src",
-                    "//wsl.localhost/Ubuntu-24.04/home/gen/night-watch-ultraconic/esp32/lib/ultrasonic",
+                    "C:/Users/PC_User/Desktop/practice_code/night-watch-ultrasonic/esp32/include",
+                    "C:/Users/PC_User/Desktop/practice_code/night-watch-ultrasonic/esp32/src",
+                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
+                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
+                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -455,7 +456,6 @@
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
-                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
@@ -473,8 +473,6 @@
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
-                    "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/PC_User/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     ""

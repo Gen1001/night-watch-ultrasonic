@@ -14,9 +14,11 @@
 #define ALERT_DISTANCE 50.0
 
 // WiFi設定
-const char* ssid = "";
-const char* password = "";
-const char* serverUrl = "http://192.168.11.7:5000/sensor";
+const char* ssid = "Buffalo-G-1380";
+const char* password = "k6ubhsfuunahr";
+
+// FlaskサーバのURL設定
+const char* serverUrl = "http://192.168.11.9:5000/sensor";
 
 // キューハンドラ設定
 QueueHandle_t distanceQueue;
@@ -171,6 +173,10 @@ void SendTask(void *pvParameters) {
             // Flaskサーバと通信するため
             http.begin(serverUrl);
 
+            if (http.connected()) {
+                Serial.println("HTTP connection established");
+            }
+
             // HTTPヘッダ設定
             // HTTPボディをJSONに設定する
             http.addHeader("Content-Type", "application/json");
@@ -213,6 +219,9 @@ void setup() {
         delay(500);
     }
 
+    // ピンモード設定
+    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(ECHO_PIN, INPUT); 
 
     // Queue作成
     // サイズ5である距離のキュー

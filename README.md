@@ -54,6 +54,7 @@ https://www.amazon.co.jp/dp/B0CPVDX544?ref=ppx_yo2ov_dt_b_fed_asin_title
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c340398c-dcbe-48b6-9f3c-e314f4a63cc2" />
 -SQLite3を確認する
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5dc6198d-8a19-4b93-9433-9ffeb6e40914" />
+
 ## 今後の展望
-・省電力モードの実装を行い、よりメモリを意識した設計を行う
+・省電力モードの実装を行い、よりメモリを意識した設計を行う  
 ・IFTTTを使用した通信を行う

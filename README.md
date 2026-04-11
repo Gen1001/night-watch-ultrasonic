@@ -40,22 +40,20 @@ https://www.amazon.co.jp/dp/B0CPVDX544?ref=ppx_yo2ov_dt_b_fed_asin_title
 -HC-SR04側
 ![離床センサ_HC](https://github.com/user-attachments/assets/71505a31-4d3d-49c2-a89d-986d0bdd3008)  
 -ESP32側
-![離床センサ_ESP](https://github.com/user-attachments/assets/84d62cec-66af-477d-a381-0b3d40f817ab)  
-
-4. PowerShellにおいて監視用のsensor_server.pyを実行し、Flaskサーバーを起動する。  
+![離床センサ_ESP](https://github.com/user-attachments/assets/84d62cec-66af-477d-a381-0b3d40f817ab)
+3. PowerShellにおいて監視用のsensor_server.pyを実行し、Flaskサーバーを起動する。  
 -sensorフォルダにおいてpython3コマンドを使用してsensor_server.pyを実行する。
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f08eacc4-e69d-4f6c-941a-639576ebd27f" />
-5. pioプロジェクトにおいてビルドを行う。  
+4. pioプロジェクトにおいてビルドを行う。  
 -「pio run -t upload」コマンドを使用してプロジェクトをESP32にアップロードする
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e460d31f-9f88-4aab-b3af-6cb3392452d5" />
 -「pio device monitor」コマンドを使用して正常に動作していることを確認する
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d0159d23-050d-444e-a6a8-05972ed1db5d" />
-7. 監視用ログとDBを確認する。  
+5. 監視用ログとDBを確認する。  
 -監視用ログファイルを確認する
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c340398c-dcbe-48b6-9f3c-e314f4a63cc2" />
 -SQLite3を確認する
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5dc6198d-8a19-4b93-9433-9ffeb6e40914" />
-
 ## 今後の展望
 ・省電力モードの実装を行い、よりメモリを意識した設計を行う
 ・IFTTTを使用した通信を行う

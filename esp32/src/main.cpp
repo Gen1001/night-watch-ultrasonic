@@ -14,8 +14,8 @@
 #define ALERT_DISTANCE 50.0
 
 // WiFi設定
-const char* ssid = "Buffalo-G-1380";
-const char* password = "k6ubhsfuunahr";
+const char* ssid = "";
+const char* password = "";
 
 // FlaskサーバのURL設定
 const char* serverUrl = "http://192.168.11.9:5000/sensor";
